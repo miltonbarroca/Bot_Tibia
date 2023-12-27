@@ -10,13 +10,14 @@ def hole_down(should_down):
             pg.click()
             pg.sleep(5)
 
-def hole_up(img_anchor, plus_x,plus_y):
-    box = pg.locateOnScreen(img_anchor, confidence=0.8)
-    if box:
-        x,y = pg.center(box)
-        pg.moveTo(x + plus_x,y + plus_y, 1) 
-        pg.press('F4')
-        pg.click()
+def hole_up(should_up,img_anchor, plus_x,plus_y):
+    if sould_up :
+        box = pg.locateOnScreen(img_anchor, confidence=0.8)
+        if box:
+            x,y = pg.center(box)
+            pg.moveTo(x + plus_x,y + plus_y, 1) 
+            pg.press('F4')
+            pg.click()
 
 def check_battle():
     try:
