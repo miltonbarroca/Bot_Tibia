@@ -6,7 +6,7 @@ WS_EX_LAYERED = 0x00080000
 LWA_ALPHA = 0x00000002
 
 OPACITY = 1 # 0 -- 255
-WINDOW_TITLE = "Tibia - Slicked Sloth" #nome do char que estiver com a janela ativa
+WINDOW_TITLE = "Tibia - Janja nira" #nome do char que estiver com a janela ativa
 target_window = gw.getWindowsWithTitle(WINDOW_TITLE)[0]
 
 if target_window is not None:
